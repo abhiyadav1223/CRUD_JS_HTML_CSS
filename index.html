@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./bootstrap-4.0.0-dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="mainBox">
+        <div class="navbar">
+            <h1 class="mx-auto">C R U D application</h1>
+        </div>
+        <div class="subNav">
+            <div class="addNewBtnBox">
+                <button class="btnAdd" onclick="addData()">Add</button>
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text " oninput="dataSearch()" id="inputSearch" placeholder="Search">
+            </div>
+        </div>
+        <div class="peopleBoxList" id="BoxList">
+            <table class="table ms-2 table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Profile</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">Location</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody id="tableId">
+                    <script>
+                      
+                    </script>
+                </tbody>
+            </table>
+        </div>
+        <div class="addDataBox" id="addData">
+            <div class="item">
+                <input type="text" id="inp1" placeholder="Enter Your Name">
+            </div>
+            <div class="item">
+                <input type="email" id="inp2" placeholder="Enter Your Email">
+            </div>
+            <div class="item">
+                <input type="number" id="inp3" placeholder="Enter Your Phone Number">
+            </div>
+            <div class="item">
+                <input type="text" id="inp4" placeholder="Enter Your Location">
+            </div>
+            <!-- <div class="item">
+                <input type="file" id="inp5">
+            </div> -->
+            <div class="item">
+                <button class="btn" onclick="onSubmitFun()">Save</button>
+            </div>
+            <div class="item">
+                <button class="btn" onclick="OnBackFun(0)">Back</button>
+            </div>
+        </div>
+        <div class="EditDataBox" id="EditData">
+            <div class="item">
+                <input type="text" id="inp1E" placeholder="Enter Your Name">
+            </div>
+            <div class="item">
+                <input type="email" id="inp2E" placeholder="Enter Your Email">
+            </div>
+            <div class="item">
+                <input type="number" id="inp3E" placeholder="Enter Your Phone Number">
+            </div>
+            <div class="item">
+                <input type="text" id="inp4E" placeholder="Enter Your Location">
+            </div>
+            <!-- <div class="item">
+                <input type="file" id="inp5">
+            </div> -->
+            <div class="item">
+                <button class="btn" onclick="onEditSubmitFun()">Save</button>
+            </div>
+            <div class="item">
+                <button class="btn" onclick="OnBackFun(1)">Back</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+
+</html>

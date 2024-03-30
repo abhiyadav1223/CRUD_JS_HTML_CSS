@@ -1,0 +1,170 @@
+body,
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Rubik", sans-serif;
+
+}
+
+.navbar {
+    /* border: 2px solid red; */
+    background-color: rgb(89, 43, 195);
+    text-align: center;
+    padding: 15px 0px;
+    color: white;
+    box-shadow: 4px 4px 6px black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.subNav {
+    /* border: 2px solid black; */
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 31%;
+}
+
+.btnAdd {
+    background-color: rgb(89, 43, 195);
+    color: white;
+    font-size: large;
+    padding: 10px 40px;
+    font-weight: bolder;
+    border-radius: 10px;
+    transition: .5s ease-out;
+    border-color: rgb(89, 43, 195);
+}
+
+.btnAdd:hover {
+    cursor: pointer;
+    background-color: white;
+    color: rgb(89, 43, 195);
+    border-color: rgb(89, 43, 195);
+}
+.search{
+    border: 2px solid rgb(89, 43, 195);
+    border-radius: 5px; 
+    padding: 0px 10px;
+}
+.search i{
+    color: rgb(89, 43, 195);
+}
+
+#inputSearch {
+    border: none;
+    margin-top: 2px;
+    font-size: large;
+    padding: 11px 20px;
+    color: rgb(89, 43, 195);
+    font-weight: bolder;
+    transition: .3s;
+}
+
+#inputSearch::placeholder {
+    color: rgb(89, 43, 195);
+    font-weight: bold;
+}
+
+#inputSearch:focus {
+    outline: none;
+}
+
+.peopleBoxList {
+    /* border: 2px solid black; */
+    box-shadow: -2px 2px 3px gray, 2px -2px 3px gray;
+    height: 70vh;
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 10px;
+    overflow-y:auto;
+    height: desired-height;
+}
+
+.imgLogo {
+    width: 40px;
+}
+
+.fa-pen,
+.fa-trash {
+    transition: .5s;
+}
+
+.fa-pen:hover,
+.fa-trash:hover {
+    cursor: pointer;
+    transform: rotate(-45deg);
+}
+
+.addDataBox,
+.EditDataBox {
+    /* border: 2px solid black; */
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: -2px -2px 5px rgb(89, 43, 195), 2px 2px 5px rgb(89, 43, 195);
+    position: absolute;
+    width: 30%;
+    top: 30%;
+    left: 35%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.item input {
+    border: none;
+    border-bottom: 2px solid rgb(89, 43, 195);
+    font-size: large;
+    width: 300px;
+    padding: 3px 10px;
+    /* border-radius: 10px; */
+}
+
+.item input[type="file"] {
+    border: none;
+    color: rgb(89, 43, 195);
+    font-weight: 700;
+}
+
+
+.item input::placeholder {
+    text-align: center;
+}
+
+.item input:focus {
+    text-align: center;
+    font-weight: 600;
+    border: none;
+}
+
+.btn {
+    background-color: rgb(89, 43, 195);
+    color: white;
+    width: 6rem;
+    padding: 5px 3px;
+    font-size: medium;
+    border-radius: 20px;
+    font-weight: bolder;
+    border: 2px solid rgb(89, 43, 195);
+}
+
+.btn:hover {
+    color: rgb(89, 43, 195);
+    background-color: white;
+    border: 2px solid rgb(89, 43, 195);
+    cursor: pointer;
+}
+
+.penIcon:hover {
+    color: rgb(89, 43, 195);
+}
+
+.deleteIcon:hover {
+    color: rgb(89, 43, 195);
+}
+
+.row:hover {
+    /* background-color: grey; */
+}
